@@ -82,6 +82,7 @@ export async function createStubExe(appDirectory: string,
     },
     'file-version':  rcInfo?.FileVersion || version,
     'product-version': rcInfo?.ProductVersion || version,
+    'requested-execution-level': 'requireAdministrator',
     icon: icon || appIconPath
   };
 
